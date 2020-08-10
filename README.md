@@ -20,13 +20,13 @@ PyTorch: 0.4.0
 
 ### Ground-truth generation
 
-#### ShanghaiTech
 ```
+# ShanghaiTech
 python preprocess/ShanghaiTech_GT_generation.py
 ```
-#### UCF-QNRF
 
 ```
+# UCF-QNRF
 python preprocess/UCF_GT_generation.py --mode train
 python preprocess/UCF_GT_generation.py --mode test
 ```
