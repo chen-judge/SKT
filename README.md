@@ -1,5 +1,9 @@
-# Efficient Crowd Counting via Structured Knowledge Transfer (ACM MM 2020)
+# Efficient Crowd Counting via Structured Knowledge Transfer (ACM MM 2020 Oral)
 
+Crowd counting is an application-oriented task and its inference efficiency is crucial for real-world applications. However, most previous works relied on heavy backbone networks and required prohibitive run-time consumption, which would seriously restrict their deployment scopes and cause poor scalability. To liberate these crowd counting models, we propose a novel Structured Knowledge Transfer (SKT) framework, which fully exploits the structured knowledge of a well-trained teacher network to generate a lightweight but still highly effective student network. 
+
+Extensive evaluations on three benchmarks well demonstrate the effectiveness of our SKT for extensive crowd counting models. In particular, only using around $6\%$ of the parameters and computation cost of original models, our distilled VGG-based models obtain at least 6.5$\times$ speed-up on an Nvidia 1080 GPU and even achieve state-of-the-art performance.
+  
 Paper: [Arxiv](https://arxiv.org/abs/2003.10120)
 
 For distilling CSRNet, we train a teacher model and follow some code with [CSRNet-pytorch](https://github.com/leeyeehoo/CSRNet-pytorch)
@@ -18,7 +22,7 @@ PyTorch: 0.4.0
 
 ## Preprocessing
 
-### Ground-truth generation
+1. Generation the ground-truth density maps for training
 
 ```
 # ShanghaiTech
@@ -31,9 +35,7 @@ python preprocess/UCF_GT_generation.py --mode train
 python preprocess/UCF_GT_generation.py --mode test
 ```
 
-### Make data path files
-
-Edit this file to change the path to your original datasets.
+2. Make data path files and edit this file to change the path to your original datasets.
 
 ```
 python preprocess/make_json.py
