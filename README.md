@@ -76,7 +76,7 @@ The well-trained teacher networks and the distilled student networks are release
 #### UCF-QNRF (2032×2912)
 | Method | MAE | RMSE | #Param (M) | FLOPs (G) | GPU (ms) | CPU (s) | Comment | 
 | --- | --- |  --- | --- |--- | --- | --- | --- |
-| CSRNet | 145.54 | 233.32 | 16.26 | 2447.91 | 823.84 | 119.67 | -- |
+| CSRNet | 145.54 | 233.32 | 16.26 | 2447.91 | 823.84 | 119.67 | trained with [CSRNet-pytorch](https://github.com/leeyeehoo/CSRNet-pytorch) |
 | 1/4-CSRNet + SKT | 144.36 | 234.64 | 1.02 | 155.69 | 106.08 | 9.71 | -- |
 | BL | 87.70 | 158.09 | 21.50 | 2441.23 | 595.72 | 130.76 | -- |
 | 1/4-BL + SKT | 96.24 | 156.82 | 1.35 | 155.30 | 90.96 | 9.78 | The released model is much better. |
