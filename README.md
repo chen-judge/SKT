@@ -1,4 +1,6 @@
-# SKT (ACM MM 2020)
+# Efficient Crowd Counting via Structured Knowledge Transfer (ACM MM 2020)
+
+Paper: [Arxiv](https://arxiv.org/abs/2003.10120)
 
 For distilling CSRNet, we train a teacher model and follow some code with [CSRNet-pytorch](https://github.com/leeyeehoo/CSRNet-pytorch)
 
