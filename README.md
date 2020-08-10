@@ -69,11 +69,18 @@ bash test.sh
 ## Models
 The well-trained teacher networks and the distilled student networks are released at [here](https://drive.google.com/drive/folders/17oxen8sNHtumcFL8hu9Z0Owuc6dWD8zV?usp=sharing). In particular, only using around 6% of the parameters and computation cost of original models, our distilled VGG-based models obtain at least 6.5× speed-up on an Nvidia 1080 GPU and even achieve state-of-the-art performance.
 
-### Shanghaitech A (576×864)
-
+Shanghaitech A (576×864)
 | Method | MAE | RMSE | #Param (M) | FLOPs (G) | GPU (ms) | CPU (s) | Comment | 
 | --- | --- |  --- | --- |--- | --- | --- | --- |
 | CSRNet | 68.43 | 105.99 | 16.26 | 205.88 | 66.58 | 7.85  | -- |
 | 1/4-CSRNet + SKT | 71.55 | 114.40 | 1.02 | 13.09 | 8.88 | 0.87 | -- |
 | BL | 61.46 | 103.17 | 21.50 | 205.32 | 47.89 |  8.84 | -- |
 | 1/4-BL + SKT | 62.73 | 102.33 | 1.35 | 13.06 | 7.40 | 0.88 | -- |
+
+UCF-QNRF (2032×2912)
+| Method | MAE | RMSE | #Param (M) | FLOPs (G) | GPU (ms) | CPU (s) | Comment | 
+| --- | --- |  --- | --- |--- | --- | --- | --- |
+| CSRNet | 145.54 | 233.32 | 16.26 | 2447.91 | 823.84 | 119.67 | -- |
+| 1/4-CSRNet + SKT | 144.36 | 234.64 | 1.02 | 155.69 | 106.08 | 9.71 | -- |
+| BL | 87.70 | 158.09 | 21.50 | 2441.23 | 595.72 | 130.76 | -- |
+| 1/4-BL + SKT | 96.24 | 156.82 | 1.35 | 155.30 | 90.96 | 9.78 | -- |
