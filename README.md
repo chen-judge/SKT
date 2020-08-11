@@ -59,15 +59,15 @@ The well-trained teacher networks and the distilled student networks are release
 #### Shanghaitech A (576×864)
 | Method | MAE | RMSE | #Param (M) | FLOPs (G) | GPU (ms) | CPU (s) | Comment | 
 | --- | --- |  --- | --- |--- | --- | --- | --- |
-| CSRNet | 68.43 | 105.99 | 16.26 | 205.88 | 66.58 | 7.85  | trained with [CSRNet-pytorch](https://github.com/leeyeehoo/CSRNet-pytorch) |
+| CSRNet | 68.43 | 105.99 | 16.26 | 205.88 | 66.58 | 7.85  | teacher model, trained with [CSRNet-pytorch](https://github.com/leeyeehoo/CSRNet-pytorch) |
 | 1/4-CSRNet + SKT | 71.55 | 114.40 | 1.02 | 13.09 | 8.88 | 0.87 | -- |
-| BL | 61.46 | 103.17 | 21.50 | 205.32 | 47.89 |  8.84 | -- |
+| BL | 61.46 | 103.17 | 21.50 | 205.32 | 47.89 |  8.84 | teacher model |
 | 1/4-BL + SKT | 62.73 | 102.33 | 1.35 | 13.06 | 7.40 | 0.88 | -- |
 
 #### UCF-QNRF (2032×2912)
 | Method | MAE | RMSE | #Param (M) | FLOPs (G) | GPU (ms) | CPU (s) | Comment | 
 | --- | --- |  --- | --- |--- | --- | --- | --- |
-| CSRNet | 145.54 | 233.32 | 16.26 | 2447.91 | 823.84 | 119.67 | trained with [CSRNet-pytorch](https://github.com/leeyeehoo/CSRNet-pytorch) |
+| CSRNet | 145.54 | 233.32 | 16.26 | 2447.91 | 823.84 | 119.67 | teacher model, trained with [CSRNet-pytorch](https://github.com/leeyeehoo/CSRNet-pytorch) |
 | 1/4-CSRNet + SKT | 144.36 | 234.64 | 1.02 | 155.69 | 106.08 | 9.71 | -- |
-| BL | 87.70 | 158.09 | 21.50 | 2441.23 | 595.72 | 130.76 | -- |
+| BL | 87.70 | 158.09 | 21.50 | 2441.23 | 595.72 | 130.76 | teacher model |
 | 1/4-BL + SKT | 96.24 | 156.82 | 1.35 | 155.30 | 90.96 | 9.78 | The released model is much better. |
