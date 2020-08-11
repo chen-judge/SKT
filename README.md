@@ -13,12 +13,14 @@ Extensive evaluations on three benchmarks well demonstrate the effectiveness of 
 
 ## Datasets
 ShanghaiTech: [Google Drive](https://drive.google.com/open?id=16dhJn7k4FWVwByRsQAEpl9lwjuV03jVI)
+
 UCF-QNRF: [Link](https://www.crcv.ucf.edu/data/ucf-qnrf/)
 
 ## Prerequisites
 We strongly recommend Anaconda as the environment.
 
 Python: 2.7
+
 PyTorch: 0.4.0
 
 ## Preprocessing
