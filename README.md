@@ -1,7 +1,7 @@
 # [Efficient Crowd Counting via Structured Knowledge Transfer](https://arxiv.org/abs/2003.10120) (ACM MM 2020 Oral)
 Crowd counting is an application-oriented task and its inference efficiency is crucial for real-world applications. However, most previous works relied on heavy backbone networks and required prohibitive run-time consumption, which would seriously restrict their deployment scopes and cause poor scalability. To liberate these crowd counting models, we propose a novel Structured Knowledge Transfer (SKT) framework, which fully exploits the structured knowledge of a well-trained teacher network to generate a lightweight but still highly effective student network. 
 
-Extensive evaluations on three benchmarks well demonstrate the effectiveness of our SKT for extensive crowd counting models. In this project, the well-trained teacher networks and the distilled student networks have been released at [GoogleDrive](https://drive.google.com/drive/folders/17oxen8sNHtumcFL8hu9Z0Owuc6dWD8zV?usp=sharing) and [BaiduYun](123). If you use this code and the released models for your research, please cite our paper:
+Extensive evaluations on three benchmarks well demonstrate the effectiveness of our SKT for extensive crowd counting models. In this project, the well-trained teacher networks and the distilled student networks have been released at [GoogleDrive](https://drive.google.com/drive/folders/17oxen8sNHtumcFL8hu9Z0Owuc6dWD8zV?usp=sharing) and [BaiduYun](https://pan.baidu.com/s/10_SLXF_FID9huRbzMHFT4A) (extract code: srpl). If you use this code and the released models for your research, please cite our paper:
 ```
 @inproceedings{liu2020efficient,
   title={Efficient Crowd Counting via Structured Knowledge Transfer},
@@ -54,7 +54,8 @@ bash test.sh
 ```
 
 ## Models
-The well-trained teacher networks and the distilled student networks are released at have been released at [GoogleDrive](https://drive.google.com/drive/folders/17oxen8sNHtumcFL8hu9Z0Owuc6dWD8zV?usp=sharing) and [BaiduYun](123). In particular, only using around 6% of the parameters and computation cost of original models, our distilled VGG-based models obtain at least 6.5× speed-up on an Nvidia 1080 GPU and even achieve state-of-the-art performance.
+The well-trained teacher networks and the distilled student networks are released at have been released at [GoogleDrive](https://drive.google.com/drive/folders/17oxen8sNHtumcFL8hu9Z0Owuc6dWD8zV?usp=sharing) and [BaiduYun](https://pan.baidu.com/s/10_SLXF_FID9huRbzMHFT4A) (extract code: srpl
+). In particular, only using around 6% of the parameters and computation cost of original models, our distilled VGG-based models obtain at least 6.5× speed-up on an Nvidia 1080 GPU and even achieve state-of-the-art performance.
 
 #### Shanghaitech A (576×864)
 | Method | MAE | RMSE | #Param (M) | FLOPs (G) | GPU (ms) | CPU (s) | Comment | 
