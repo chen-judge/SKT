@@ -196,7 +196,7 @@ def train(train_list, teacher, student, criterion, optimizer, epoch):
             loss_f = []
             assert len(teacher_fsp) == len(student_fsp)
             for t in range(len(teacher_fsp)):
-                loss_f.append(criterion(teacher_fsp[t], student_fsp[t]))
+                loss_f.append(criterion(student_fsp[t], teacher_fsp[t]))
             loss_fsp = sum(loss_f) * args.lamb_fsp
 
         loss_cos = torch.tensor([0.], dtype=torch.float).cuda()
